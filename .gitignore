@@ -426,3 +426,27 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# --- Python / Jupyter (rules from the Day 1 assignment) ---
+__pycache__/
+*.py[cod]
+
+# virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# data: downloaded by the notebook, not committed
+data/*
+!data/.gitkeep
+!data/seattle_buildings_clean.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# secrets
+.env
+kaggle.json
